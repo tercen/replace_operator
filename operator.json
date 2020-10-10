@@ -1,10 +1,33 @@
 {
-  "name": "Median",
-  "description": "Return the medium value of a cell",
-  "tags": ["basic statistics"],
+  "name": "Replace operator",
+  "description": "Performs the replacement of the first or all matches of a string.",
+  "tags": ["text manipulation"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_operator"],
-  "properties": []
+  "urls": ["https://github.com/tercen/replace_operator"],
+  "properties": [
+  {
+    "kind": "EnumeratedProperty",
+    "name": "type",
+    "defaultValue": "all",
+    "values": [
+      "all",
+      "first"
+    ],
+    "description": "replace first or all matches"
+  },
+    {
+    "kind": "StringProperty",
+    "name": "what",
+    "defaultValue": " ",
+    "description": "pattern to be matched (regular expression)"
+  },
+  {
+    "kind": "StringProperty",
+    "name": "by",
+    "defaultValue": "",
+    "description": "a replacement for matched pattern"
+  }
+  ]
 }
 
 
