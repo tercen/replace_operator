@@ -1,6 +1,6 @@
 {
-  "name": "Replace operator",
-  "description": "Performs the replacement of the first or all matches of a string.",
+  "name": "Replace",
+  "description": "Replaces any text matched in a string with an alternative text.",
   "tags": ["text manipulation"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/replace_operator"],
