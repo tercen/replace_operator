@@ -2,6 +2,18 @@
   "kind": "OperatorUnitTest",
   "name": "Replace",
   "namespace": "ds0",
+  "propertyValues": [
+    {
+    "kind": "PropertyValue",
+    "name": "what",
+    "value": "var"
+    },
+    {
+    "kind": "PropertyValue",
+    "name": "by",
+    "value": "val"
+    }
+  ], 
   "inputDataUri": "c03_simple_exp.tsv",
   "outputDataUri": ["table1.csv","table2.csv"],
   "columns": [],
