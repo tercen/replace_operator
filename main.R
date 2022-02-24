@@ -20,6 +20,6 @@ if(type == "first") {
 }
 
 data.frame(string) %>% 
-  mutate(.ri = seq_len(nrow(.))-1) %>%
+  mutate(.ri = seq_len(nrow(.))-1L) %>%
   ctx$addNamespace() %>%
   ctx$save()
