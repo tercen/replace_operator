@@ -2,8 +2,8 @@ library(tercen)
 library(dplyr)
 library(tidyr)
 
-options("tercen.workflowId" = "a77770c3923fad0ca99b77fa8905471d")
-options("tercen.stepId"     = "4bfb04a0-e639-43b7-9b3b-56302fd921ea")
+options("tercen.workflowId" = "19975e0adc3267c4665f02d347003604")
+options("tercen.stepId"     = "c5f084df-dd2a-449b-8630-00e5b9007f9c")
 
 ctx = tercenCtx()
 
@@ -11,9 +11,9 @@ if (length(ctx$rnames) != 1) stop("One and only one row factor is required.")
 
 type <- "all"
 if(!is.null(ctx$op.value('type'))) type <- ctx$op.value('type')
-what <- '([.][0-9])[.][0-9]'
+what <- 'var'
 if(!is.null(ctx$op.value('what'))) type <- ctx$op.value('what')
-by <- "\\1"
+by <- "value"
 if(!is.null(ctx$op.value('by'))) by <- ctx$op.value('by')
 
 if(type == "first") {
