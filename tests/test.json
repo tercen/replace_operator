@@ -6,12 +6,12 @@
     {
     "kind": "PropertyValue",
     "name": "what",
-    "value": "var"
+    "value": "r"
     },
     {
     "kind": "PropertyValue",
     "name": "by",
-    "value": "val"
+    "value": "l"
     }
   ], 
   "inputDataUri": "c03_simple_exp.tsv",
