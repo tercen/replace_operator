@@ -34,5 +34,28 @@
       "defaultValue": "",
       "description": "a replacement for matched pattern"
     }
-  ]
+  ],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "0.0.1",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "String",
+            "type": "string",
+            "description": "Strings to be replaced",
+            "ontologyMapping": "character",
+            "crosstabMapping": "row",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
+        "axis": []
+      }
+    ]
+  }
 }
