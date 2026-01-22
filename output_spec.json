@@ -1,20 +1,32 @@
 {
-  "outputSpecs": [{
-    "kind": "OperatorJoinSpec",
-    "joinOperators": [{
-      "kind": "JoinOperator",
-      "joinType": "left",
-      "leftPair": {
-        "kind": "ColumnPair",
-        "lColumns": ["Text"],
-        "rColumns": ["Text"]
-      },
-      "rightRelation": {
-        "kind": "TableRelation",
-        "attributes": [
-          {"kind": "Attribute", "name": "string", "type": "string"}
-        ]
-      }
-    }]
-  }]
+  "outputSpecsV2": [
+    {
+      "kind": "OperatorJoinSpec",
+      "joinOperators": [
+        {
+          "kind": "JoinOperator",
+          "joinType": "left",
+          "leftPair": {
+            "kind": "ColumnPair",
+            "lColumns": [
+              "Text"
+            ],
+            "rColumns": [
+              "Text"
+            ]
+          },
+          "rightRelation": {
+            "kind": "TableRelation",
+            "attributes": [
+              {
+                "kind": "Attribute",
+                "name": "string",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }
